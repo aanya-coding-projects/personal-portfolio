@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Aanya Agarwal | Portfolio</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container flex">
+            <h1 class="logo"><a href="index.html">Aanya Agarwal</a></h1>
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="showcase">
+        <div class="container">
+            <div class="avatar">AA</div>
+            <h1>Aanya Agarwal</h1>
+            <h2>CS Student at Georgia Tech &bull; AI/ML Engineer</h2>
+            <p>Building intelligent systems at the intersection of machine learning and full-stack development. Currently studying at Georgia Tech and open to internship opportunities.</p>
+            <div class="socials">
+                <a href="https://linkedin.com/in/agarwal-aanya" target="_blank" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/aanya-coding-projects" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:agaraanya@gmail.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+            <div style="margin-top: 1.8rem; display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap;">
+                <a href="projects.html" class="btn btn-light">View Projects</a>
+                <a href="resume.html" class="btn btn-light">Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+            <div class="grid-2">
+                <div class="about-text">
+                    <p>I'm a Computer Science student at <strong>Georgia Institute of Technology</strong> (expected May 2028), with a focus on machine learning, AI systems, and full-stack development. My first year included a semester abroad in Metz, France through Georgia Tech's European campus.</p>
+                    <p>My research spans deepfake detection at <strong>Accenture</strong>, NLP and legal text analysis at <strong>Algoverse</strong>, and graduate-level computer vision research at Georgia Tech — developing CNN-ViT hybrid models for domain adaptation.</p>
+                    <p>On the engineering side, I ship full-stack projects ranging from a real-time multiplayer chess platform to offline-first PWAs powered by the Claude API — always focused on building things that work end-to-end.</p>
+                    <a href="contact.html" class="btn btn-outline" style="margin-top: 0.8rem;">Get in Touch</a>
+                </div>
+                <div>
+                    <h3 style="color: #1e2d5a; margin-bottom: 1rem; font-size: 1rem; font-weight: 500;">Technical Skills</h3>
+                    <p class="category-label" style="margin-bottom: 0.4rem;">Languages</p>
+                    <div class="skill-tags" style="margin-bottom: 1rem;">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag secondary">TypeScript</span>
+                        <span class="skill-tag secondary">JavaScript</span>
+                        <span class="skill-tag secondary">SQL</span>
+                        <span class="skill-tag secondary">Swift</span>
+                        <span class="skill-tag secondary">Assembly</span>
+                    </div>
+                    <p class="category-label" style="margin-bottom: 0.4rem;">ML &amp; Data</p>
+                    <div class="skill-tags" style="margin-bottom: 1rem;">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag secondary">NumPy</span>
+                        <span class="skill-tag secondary">Pandas</span>
+                        <span class="skill-tag secondary">MongoDB</span>
+                        <span class="skill-tag secondary">SQLite</span>
+                        <span class="skill-tag secondary">Prisma</span>
+                    </div>
+                    <p class="category-label" style="margin-bottom: 0.4rem;">Web &amp; Tools</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag secondary">Node.js</span>
+                        <span class="skill-tag secondary">HTML/CSS</span>
+                        <span class="skill-tag secondary">SwiftUI</span>
+                        <span class="skill-tag secondary">Git</span>
+                        <span class="skill-tag secondary">Vite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-divider"></div>
+            <div class="grid">
+                <div class="project-card">
+                    <div class="category-label">Full-Stack</div>
+                    <h3>Multiplayer Chess App</h3>
+                    <p>Real-time multiplayer chess with WebSocket matchmaking, Stockfish AI engine, voice chat, lobby system, and JWT auth backed by PostgreSQL.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">WebSockets</span>
+                        <span class="tech-tag">Prisma</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/aanya-coding-projects/chess-website" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="category-label">AI &bull; PWA</div>
+                    <h3>Field — Health Companion</h3>
+                    <p>Offline-first PWA for journalists with Claude AI coaching, nutrition tracking, sleep logging, and Google Calendar integration. All data stored locally.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Claude API</span>
+                        <span class="tech-tag">IndexedDB</span>
+                        <span class="tech-tag">Vite PWA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/aanya-coding-projects/field" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="category-label">Full-Stack</div>
+                    <h3>School Job Board <span class="badge achievement">FBLA 5th Nationally</span></h3>
+                    <p>Job board platform for 3,600+ high school students and counselors, with employer posting, student applications, and backend approval workflows.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Prisma ORM</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/aanya-coding-projects/build-a-web" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2.2rem;">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aanya Agarwal &bull; <a href="mailto:agaraanya@gmail.com">agaraanya@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
