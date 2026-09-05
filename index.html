@@ -58,7 +58,7 @@
                     <a href="contact.html" class="btn btn-outline" style="margin-top: 0.8rem;">Get in Touch</a>
                 </div>
                 <div>
-                    <h3 style="color: #1e2d5a; margin-bottom: 1rem; font-size: 1rem; font-weight: 500;">Technical Skills</h3>
+                    <h3 class="skills-heading">Technical Skills</h3>
                     <p class="category-label" style="margin-bottom: 0.4rem;">Languages</p>
                     <div class="skill-tags" style="margin-bottom: 1rem;">
                         <span class="skill-tag">Python</span>
@@ -178,6 +178,14 @@
     <footer>
         <p>&copy; 2026 Aanya Agarwal &bull; <a href="mailto:agaraanya@gmail.com">agaraanya@gmail.com</a></p>
     </footer>
+
+    <script>
+        const _t = document.querySelectorAll('.project-card, .timeline-item, .section-title, .section-divider, .skill-tags');
+        const _io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        _t.forEach(el => { el.classList.add('reveal'); _io.observe(el); });
+    </script>
 
 </body>
 </html>

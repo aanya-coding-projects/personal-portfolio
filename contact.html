@@ -103,11 +103,9 @@
                         </div>
                     </div>
 
-                    <div style="margin-top: 2rem; padding: 1.4rem; background: #f0f4ff; border-radius: 8px; border-left: 3px solid #2d4a8c;">
-                        <h3 style="color: #1e2d5a; font-size: 0.95rem; margin-bottom: 0.4rem;">Currently</h3>
-                        <p style="font-size: 0.88rem; color: #555; margin: 0; line-height: 1.7;">
-                            CS student at Georgia Tech &bull; Open to Summer 2026 internships in AI/ML and software engineering
-                        </p>
+                    <div class="currently-box">
+                        <h3>Currently</h3>
+                        <p>CS student at Georgia Tech &bull; Open to Summer 2026 internships in AI/ML and software engineering</p>
                     </div>
                 </div>
 
@@ -118,6 +116,14 @@
     <footer>
         <p>&copy; 2026 Aanya Agarwal &bull; <a href="mailto:agaraanya@gmail.com">agaraanya@gmail.com</a></p>
     </footer>
+
+    <script>
+        const _t = document.querySelectorAll('.contact-info-item, .section-title, .section-divider, .form-group');
+        const _io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        _t.forEach(el => { el.classList.add('reveal'); _io.observe(el); });
+    </script>
 
 </body>
 </html>

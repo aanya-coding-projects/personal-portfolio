@@ -51,8 +51,8 @@
                 <div class="date">Expected May 2028</div>
                 <h3>Georgia Institute of Technology</h3>
                 <span class="org">Bachelor of Science in Computer Science &bull; Atlanta, GA</span>
-                <p style="font-size: 0.88rem; color: #666; margin-bottom: 0.4rem;">First Year Semester Abroad &bull; Metz, France</p>
-                <p style="font-size: 0.88rem; color: #555;">
+                <p style="font-size: 0.875rem; margin-bottom: 0.4rem;">First Year Semester Abroad &bull; Metz, France</p>
+                <p style="font-size: 0.875rem;">
                     <strong>Relevant Coursework:</strong> Data Structures and Algorithms, Object-Oriented Programming, Discrete Math, Linear Algebra, Assembly
                 </p>
             </div>
@@ -65,7 +65,7 @@
             <div class="section-divider"></div>
             <div class="grid-3">
                 <div>
-                    <h3 style="color: #1e2d5a; font-size: 0.95rem; margin-bottom: 0.9rem; font-weight: 500;">Programming Languages</h3>
+                    <h3 class="skills-heading">Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">Java</span>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 style="color: #1e2d5a; font-size: 0.95rem; margin-bottom: 0.9rem; font-weight: 500;">Machine Learning and Data</h3>
+                    <h3 class="skills-heading">Machine Learning and Data</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PyTorch</span>
                         <span class="skill-tag">TensorFlow</span>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 style="color: #1e2d5a; font-size: 0.95rem; margin-bottom: 0.9rem; font-weight: 500;">Web and Application Development</h3>
+                    <h3 class="skills-heading">Web and Application Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">React</span>
                         <span class="skill-tag secondary">SwiftUI</span>
@@ -210,6 +210,14 @@
     <footer>
         <p>&copy; 2026 Aanya Agarwal &bull; <a href="mailto:agaraanya@gmail.com">agaraanya@gmail.com</a></p>
     </footer>
+
+    <script>
+        const _t = document.querySelectorAll('.timeline-item, .section-title, .section-divider, .skill-tags');
+        const _io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        _t.forEach(el => { el.classList.add('reveal'); _io.observe(el); });
+    </script>
 
 </body>
 </html>

@@ -318,5 +318,13 @@
         <p>&copy; 2026 Aanya Agarwal &bull; <a href="mailto:agaraanya@gmail.com">agaraanya@gmail.com</a></p>
     </footer>
 
+    <script>
+        const _t = document.querySelectorAll('.project-card, .section-title, .section-divider');
+        const _io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); _io.unobserve(e.target); } });
+        }, { threshold: 0.08 });
+        _t.forEach(el => { el.classList.add('reveal'); _io.observe(el); });
+    </script>
+
 </body>
 </html>
